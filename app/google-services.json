@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559919360469",
+    "project_id": "heiko-sicherung",
+    "storage_bucket": "heiko-sicherung.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559919360469:android:d4e797ced6056e372d755c",
+        "android_client_info": {
+          "package_name": "com.example.heikosicherung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcCBLGMNim7-ngEYQLAhxVlW0Lw1gMVeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
