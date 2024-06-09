@@ -85,16 +85,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             holder.cardView.setCardBackgroundColor(ContextCompat.getColor(context, background_amelie));
         }
 
-<<<<<<< HEAD
-        holder.edit.setOnClickListener(v -> openPopup(holder.getAdapterPosition(), user.getName()));
-=======
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openPopup(holder.getAdapterPosition(), user.getName());
             }
         });
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
     }
 
     @Override
@@ -126,13 +122,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         popup_cardView.setCardBackgroundColor(Objects.equals(name, "Alex") ? ContextCompat.getColor(context, background_alex) : ContextCompat.getColor(context, background_amelie));
 
         popup_name = dialogView.findViewById(R.id.popup_name);
-<<<<<<< HEAD
-        popup_betrag = dialogView.findViewById(R.id.popup_amount);
-        popup_grund = dialogView.findViewById(R.id.popup_usage);
-=======
         popup_betrag = dialogView.findViewById(R.id.popup_betrag);
         popup_grund = dialogView.findViewById(R.id.popup_grund);
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
         popup_date = dialogView.findViewById(R.id.popup_date);
 
         popup_name.setText(user.getName());
@@ -187,18 +178,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             });
         });
 
-<<<<<<< HEAD
-        cancelButton.setOnClickListener(v -> {
-            Toast.makeText(context, "Nichts geändert (Abgebrochen)!", Toast.LENGTH_SHORT).show();
-            alertDialog.dismiss();
-=======
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "Nichts geändert (Abgebrochen)!", Toast.LENGTH_SHORT).show();
                 alertDialog.dismiss();
             }
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
         });
     }
 

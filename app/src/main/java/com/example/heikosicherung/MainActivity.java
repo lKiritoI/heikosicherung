@@ -3,10 +3,7 @@ package com.example.heikosicherung;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
-=======
 import android.view.View;
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -104,13 +101,6 @@ public class MainActivity extends AppCompatActivity {
             header.setText("User-Name");
         }
 
-<<<<<<< HEAD
-        logout.setOnClickListener(v -> {
-            FirebaseAuth.getInstance().signOut();
-            Intent intent = new Intent(getApplicationContext(), Login.class);
-            startActivity(intent);
-            finish();
-=======
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
         });
 
         insert.setOnClickListener(v -> {

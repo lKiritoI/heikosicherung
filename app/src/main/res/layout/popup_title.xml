@@ -8,16 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-<<<<<<< HEAD
         android:padding="16dp"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
-=======
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:padding="16dp"/>
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
 
 </LinearLayout>

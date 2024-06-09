@@ -112,13 +112,7 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
         } else {
             header.setText(user.getDisplayName());
         }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
     }
-
     private void resetFields() {
         amount = findViewById(R.id.et_amount);
         usage = findViewById(R.id.et_usage);

@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -42,21 +35,13 @@
                 android:id="@+id/rb_user_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_weight="1" />
-=======
-                android:layout_weight="1"/>
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
 
             <RadioButton
                 android:id="@+id/rb_user_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
                 android:layout_weight="1" />
-=======
-                android:layout_weight="1"/>
->>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
 
         </RadioGroup>
 
