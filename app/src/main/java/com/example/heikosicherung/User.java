@@ -7,6 +7,10 @@ public class User {
     private String name;
     private String amount;
     private String usage;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
     private String date;
 
     public User() {

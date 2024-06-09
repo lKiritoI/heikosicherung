@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+<<<<<<< HEAD
     <androidx.cardview.widget.CardView
         xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
         android:id="@+id/popup_cardView"
         android:layout_width="match_parent"
         android:layout_height="140dp"
@@ -32,6 +36,10 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:paddingStart="5dp"
+<<<<<<< HEAD
+=======
+                    android:text="Name"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -87,11 +95,19 @@
                 android:orientation="horizontal">
 
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/popup_amount_title"
+=======
+                    android:id="@+id/popup_betrag_title"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:paddingStart="5dp"
+<<<<<<< HEAD
+=======
+                    android:text="Betrag"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -111,17 +127,28 @@
                     android:gravity="center_vertical">
 
                     <EditText
+<<<<<<< HEAD
                         android:id="@+id/popup_amount"
+=======
+                        android:id="@+id/popup_betrag"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="8dp"
                         android:paddingBottom="8dp"
+<<<<<<< HEAD
                         android:layout_marginEnd="40dp"
+=======
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                         android:singleLine="true"
                         android:textSize="24sp" />
 
                     <TextView
+<<<<<<< HEAD
                         android:id="@+id/currency_symbol_textview"
+=======
+                        android:id="@+id/quadratisches_textview"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="end"
@@ -139,11 +166,19 @@
                 android:orientation="horizontal">
 
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/popup_usage_title"
+=======
+                    android:id="@+id/popup_grund_title"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                     android:layout_width="85dp"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:paddingStart="5dp"
+<<<<<<< HEAD
+=======
+                    android:text="Grund"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -163,7 +198,11 @@
                     android:gravity="center_vertical">
 
                     <EditText
+<<<<<<< HEAD
                         android:id="@+id/popup_usage"
+=======
+                        android:id="@+id/popup_grund"
+>>>>>>> 1b60332a34d3862326e7903350a89bad2e4078cd
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="8dp"
