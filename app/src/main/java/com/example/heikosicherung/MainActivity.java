@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<User> list = new ArrayList<>();
     ArrayList<String> list_key = new ArrayList<>();
     MyAdapter adapter;
-    String empty = "";
+    String empty = " ";
     DatabaseReference databaseReference;
     float amount_user_1 = 0.00f;
     float amount_user_2 = 0.00f;
