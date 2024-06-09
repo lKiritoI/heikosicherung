@@ -85,12 +85,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             holder.cardView.setCardBackgroundColor(ContextCompat.getColor(context, background_amelie));
         }
 
-        holder.edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPopup(holder.getAdapterPosition(), user.getName());
-            }
-        });
+        holder.edit.setOnClickListener(v -> openPopup(holder.getAdapterPosition(), user.getName()));
     }
 
     @Override
@@ -178,12 +173,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             });
         });
 
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Nichts geändert (Abgebrochen)!", Toast.LENGTH_SHORT).show();
-                alertDialog.dismiss();
-            }
+        cancelButton.setOnClickListener(v -> {
+            Toast.makeText(context, "Nichts geändert (Abgebrochen)!", Toast.LENGTH_SHORT).show();
+            alertDialog.dismiss();
         });
     }
 
