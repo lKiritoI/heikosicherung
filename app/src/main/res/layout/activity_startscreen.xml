@@ -3,131 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:layout_margin="10dp">
+    android:background="@color/white">
 
     <ScrollView
         android:id="@+id/startscreen_sv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_above="@id/registration_linlay_nav"
-        android:layout_alignParentTop="true">
+        android:layout_above="@id/add_room_linlay_nav"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp">
 
         <LinearLayout
             android:id="@+id/main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            tools:context=".Registration">
+            tools:context=".Startscreen">
+
+            <TextView
+                android:id="@+id/startscreen_tv_header_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lieber Geld wie Heu"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/startscreen_tv_header_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="als dumm wie Stroh."
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/registration_iv_logo"
-                android:layout_width="wrap_content"
+                android:id="@+id/startscreen_iv_logo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/startscreen_tv_header_2"
                 android:layout_marginVertical="10dp"
                 android:adjustViewBounds="true"
                 android:background="?android:attr/selectableItemBackground"
-                android:maxWidth="125dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerInside"
                 android:src="@drawable/billy_logo" />
 
-            <TextView
-                android:id="@+id/registration_tv_header"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:background="@color/yellow"
-                android:gravity="center"
-                android:text="Neu hier?"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/registration_et_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                android:background="@color/yellow"
-                android:hint="@string/email"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColorHint="@color/light_grey" />
-
-            <EditText
-                android:id="@+id/registration_et_passwort"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/yellow"
-                android:hint="@string/passwort"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColorHint="@color/light_grey" />
-
-            <EditText
-                android:id="@+id/registration_et_display"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@color/yellow"
-                android:hint="@string/display_name"
-                android:layout_marginVertical="5dp"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:textColorHint="@color/light_grey" />
-
-            <ProgressBar
-                android:id="@+id/registration_pb_progressBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                android:visibility="gone" />
-
-            <Button
-                android:id="@+id/registration_btn_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:backgroundTint="@color/yellow"
-                android:text="@string/registration"
-                android:textColor="@color/black" />
-
-            <Button
-                android:id="@+id/registration_tv_goto_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="15dp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/yellow"
-                android:text="Schon registriert? Hier einloggen"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/registration_tv_advertisement_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Ausgaben unter Freunden."
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
             <LinearLayout
-                android:id="@+id/registration_linlay_advertisement_2"
+                android:id="@+id/startscreen_linlay_advertisement_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_1"
+                    android:id="@+id/startscreen_tv_advertisement_2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="EINFACH"
@@ -137,7 +69,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_2"
+                    android:id="@+id/startscreen_tv_advertisement_2_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="."
@@ -147,7 +79,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_3"
+                    android:id="@+id/startscreen_tv_advertisement_2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FAIR"
@@ -157,7 +89,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_4"
+                    android:id="@+id/startscreen_tv_advertisement_2_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="."
@@ -167,7 +99,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_5"
+                    android:id="@+id/startscreen_tv_advertisement_2_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="VERWALTEN"
@@ -177,7 +109,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/registration_tv_advertisement_2_6"
+                    android:id="@+id/startscreen_tv_advertisement_2_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="."
@@ -188,28 +120,57 @@
             </LinearLayout>
 
             <TextView
-                android:padding="5dp"
-                android:id="@+id/registration_tv_slogan"
+                android:id="@+id/startscreen_tv_advertisement_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:textSize="16sp"
-                android:text="Werbe_Slogan" />
+                android:layout_marginTop="10dp"
+                android:text="Ausgaben unter Freunden."
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/startscreen_linlay_logreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="25dp">
+
+                <Button
+                    android:id="@+id/startscreen_btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="Hinein in den Stall"
+                    android:backgroundTint="@color/yellow"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:id="@+id/startscreen_btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neu anmelden"
+                    android:backgroundTint="@color/yellow"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
-        android:id="@+id/registration_linlay_nav"
+        android:id="@+id/add_room_linlay_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="15dp">
 
         <LinearLayout
-            android:id="@+id/registration_linlay_nav_top"
+            android:id="@+id/add_room_linlay_nav_top"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
@@ -217,7 +178,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/registration_btn_nav_services"
+                android:id="@+id/startscreen_btn_nav_services"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
@@ -228,7 +189,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/registration_btn_nav_faq"
+                android:id="@+id/startscreen_btn_nav_faq"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
@@ -239,7 +200,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/registration_btn_nav_contact"
+                android:id="@+id/startscreen_btn_nav_contact"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
@@ -252,7 +213,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/registration_linlay_nav_bottom"
+            android:id="@+id/add_room_linlay_nav_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -260,7 +221,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/registration_btn_nav_datasecurity"
+                android:id="@+id/startscreen_btn_nav_datasecurity"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
@@ -271,7 +232,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/registration_btn_nav_impress"
+                android:id="@+id/startscreen_btn_nav_impress"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
